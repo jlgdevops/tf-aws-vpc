@@ -13,7 +13,7 @@ Ce module permet la creation des resources AWS suivantes:
 
 Exemple de base :
 
-``hcl
+```hcl
 module "vpc" {
   source = "github.com/jlgdevops/tf-aws-vpc"
   vpc_cidr = "10.1.0.0/16"
@@ -24,7 +24,7 @@ Définition des sous-réseaux à déployer dans le VPC (3 ici) :
 
 ```hcl
 module "vpc" {
-  source = "akirosit/vpc-sample/aws"
+  source = "github.com/jlgdevops/tf-aws-vpc"
   vpc_cidr = "10.1.0.0/16"
   subnets_cidr = ["10.1.0.0/24", "10.1.1.0/24", "10.1.2.0/24"]
 }
