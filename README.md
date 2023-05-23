@@ -20,12 +20,12 @@ module "vpc" {
 }
 ```
 
-Définition des sous-réseaux à déployer dans le VPC (3 ici) :
+Définition des 2 sous-réseaux à déployer dans le VPC:
 
 ```hcl
 module "vpc" {
   source = "github.com/jlgdevops/tf-aws-vpc"
   vpc_cidr = "10.1.0.0/16"
-  subnets_cidr = ["10.1.0.0/24", "10.1.1.0/24", "10.1.2.0/24"]
+  subnets_cidr = ["10.1.0.0/24", "10.1.1.0/24"]
 }
 ```
