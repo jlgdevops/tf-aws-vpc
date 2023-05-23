@@ -1,14 +1,8 @@
 # tf-aws-vpc
 Module Terraform pour le déploiement d'un VPC sur AWS
 
-## A propos de ce module
-Ce module permet la creation des resources AWS suivantes:
-
 ## A propos de ce module
-
-Il a été créé à des fins de formation.
-
-Le module crée :
+Ce module permet la creation des resources AWS suivantes:
 
 - 1 `aws_vpc`.
 - 1 `aws_internet_gateway` attaché au VPC.
